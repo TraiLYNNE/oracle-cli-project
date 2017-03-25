@@ -8,4 +8,4 @@ I need a CLI, Hero, and Scraper class
   [x] needs requirements
   [x] needs shebang line
   [X] needs to work
-  [] needs to be able to call the CLI CLass
+  [x] needs to be able to call the CLI Class
