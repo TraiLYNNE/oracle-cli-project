@@ -42,7 +42,7 @@ class Oracle::CLI
     when "done"
       puts "Right then. Back to work"
     else
-      puts "details"
+      Hero.all[input.to_i - 1].display_details
       select_option
     end
   end
