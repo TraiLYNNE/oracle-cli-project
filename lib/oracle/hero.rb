@@ -1,6 +1,6 @@
 class Hero
   #attributes and variables
-  attr_accessor :real_name, :current_alias
+  attr_accessor :real_name, :current_alias, :affiliation, :boo, :identity, :citizenship, :marital_status, :occupation, :race, :gender, :height, :weight, :eyes, :hair, :skin, :universe, :pob
   @@all = Array.new
 
   #modules
