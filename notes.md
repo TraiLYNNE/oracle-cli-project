@@ -22,8 +22,8 @@ I need a CLI, Hero, and Scraper class
   [x] needs to pull Heroes @@all array and display the heroes via #list_options
   [] needs to convert user input to integer if input is not 'done' or 'list'
   [] needs to accept an option from the menu based on user input and call the hero to display it's details
-  [] needs accept 'list' and display the menu of options again
-  [] needs to accept 'done' and display 'Right then. Back to work.'
+  [x] needs accept 'list' and display the menu of options again
+  [x] needs to accept 'done' and display 'Right then. Back to work.'
 
 3. Hero Class
   [x] needs an @@all array
