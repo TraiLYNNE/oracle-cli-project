@@ -5,6 +5,6 @@ A database based on BatGirl when she becomes Oracle. My end goal is to have the 
 I need a CLI, Hero, and Scraper class
 
 1. Bin File
-  [] needs requirements
-  [] needs shebang line
-  [] needs to work
+  [x] needs requirements
+  [x] needs shebang line
+  [X] needs to work
