@@ -21,4 +21,9 @@ class Hero
 
 
   #instance methods
+  def display_details
+    puts "#{current_alias}"
+    puts "Real Name: #{real_name}"
+    puts "Alias: #{current_alias}"
+  end
 end
