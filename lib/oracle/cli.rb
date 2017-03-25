@@ -4,7 +4,7 @@ class Oracle::CLI
     password
     puts "Here are you allies:"
     allies = ["1", "2", "3", "4"]
-    allies.each {|a| puts "#{a}"}
+    allies.each.with_index {|a, i| puts "#{i+1}. #{a}"}
   end
 
   def password
