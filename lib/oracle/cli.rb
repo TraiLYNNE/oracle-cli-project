@@ -1,5 +1,6 @@
 class Oracle::CLI
   def call
-    puts "Hello World"
+    puts "Welcome."
+    puts "Please enter your secret identity:"
   end
 end

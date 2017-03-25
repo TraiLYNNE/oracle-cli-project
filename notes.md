@@ -9,3 +9,13 @@ I need a CLI, Hero, and Scraper class
   [x] needs shebang line
   [X] needs to work
   [x] needs to be able to call the CLI Class
+2. CLI Class
+  [x] needs to have a greeting
+  [] needs to accept a password as Bruce Wayne (case sensitive)
+  [] when the password is entered, the user must not be able to see it
+  [] the password is entered correctly, the user will see a list of options
+  [] if the password is entered incorrectly, the user will see "PasswordError" - an error to be defined later
+
+
+Random Ideas
+- complete reset if password entered incorrectly too many itmes ?
