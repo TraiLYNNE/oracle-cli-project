@@ -30,6 +30,9 @@ I need a CLI, Hero, and Scraper class
   [x] needs to be able to read the array
   [x] needs to be able to display it's heroes options
 
+4. Scraper
+  [] needs to accept the end of a url
+
 
 Random Ideas
 - complete reset if password entered incorrectly too many times ?
