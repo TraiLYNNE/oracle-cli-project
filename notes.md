@@ -20,7 +20,8 @@ I need a CLI, Hero, and Scraper class
   [x] need to have each hero with it's index number in front of it and increased by 1
   [x] needs to be able to pull from Hero Class
   [x] needs to pull Heroes @@all array and display the heroes via #list_options
-  [] needs to accept an option from the menu and call the hero to display it's details
+  [] needs to convert user input to integer if input is not 'done' or 'list'
+  [] needs to accept an option from the menu based on user input and call the hero to display it's details
   [] needs accept 'list' and display the menu of options again
   [] needs to accept 'done' and display 'Right then. Back to work.'
 
