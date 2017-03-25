@@ -17,8 +17,8 @@ class Oracle::CLI
     end
   end
 
-  def list_options(hero_array = ["1", "2", "3", "4"])
+  def list_options
     puts "Here are your allies:"
-    hero_array.each.with_index {|a,i| puts "#{i+1}. #{a}"}
+    Hero.all.each.with_index {|a,i| puts "#{i+1}. #{a}"}
   end
 end

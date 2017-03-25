@@ -18,11 +18,11 @@ I need a CLI, Hero, and Scraper class
   [x] needs to accept an array of heroes
   [x] needs to list each one by one after the password is entered correctly
   [x] need to have each hero with it's index number in front of it and increased by 1
-  []needs to be able to pull from hero
+  []needs to be able to pull from Hero Class
   [] needs to pull Heroes @@all array and display the heroes via #list_options
 3. Hero Class
-  [] needs an @@all array
-  [] needs to be able to read the array
+  [x] needs an @@all array
+  [x] needs to be able to read the array
 
 
 Random Ideas
