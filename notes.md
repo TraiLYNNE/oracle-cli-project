@@ -12,7 +12,7 @@ I need a CLI, Hero, and Scraper class
 2. CLI Class
   [x] needs to have a greeting
   [] needs to accept a password as Bruce Wayne (case sensitive)
-  [] when the password is entered, the user must not be able to see it
+  [x] when the password is entered, the user must not be able to see it
   [] the password is entered correctly, the user will see a list of options
   [] if the password is entered incorrectly, the user will see "PasswordError" - an error to be defined later
 
