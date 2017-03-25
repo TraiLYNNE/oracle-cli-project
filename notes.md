@@ -18,4 +18,4 @@ I need a CLI, Hero, and Scraper class
 
 
 Random Ideas
-- complete reset if password entered incorrectly too many itmes ?
+- complete reset if password entered incorrectly too many times ?
