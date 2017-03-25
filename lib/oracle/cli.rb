@@ -2,6 +2,9 @@ class Oracle::CLI
   def call
     puts "Welcome."
     password
+    puts "Here are you allies:"
+    allies = ["1", "2", "3", "4"]
+    allies.each {|a| puts "#{a}"}
   end
 
   def password
