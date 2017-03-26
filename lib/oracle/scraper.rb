@@ -19,7 +19,9 @@ class Scraper
   def scrape_site
     character_profile = Nokogiri::HTML(open(@url))
 
-    symbols = character_profile.css('aside .pi-data').collect {|sym| sym.css('h3').text}
+    change_to_symbols = character_profile.css('aside .pi-data').collect {|sym| sym.css('h3').text}
+
+    values_for_symbols = character_profile.css('aside .pi-data').collect {|val| val.css('.pi-data-value').text}
   end
 
 
