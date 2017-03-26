@@ -9,7 +9,7 @@ class Hero
   #initialize
   def initialize (hero_details)
     hero_details.each{|k,v| self.send(("#{k}="), v)}
-    self.class.all << self
+    self.class.all << self unless self.class.all.include?(self)
   end
 
 

@@ -35,11 +35,21 @@ class Oracle::CLI
     when "done"
       puts "Right then. Back to work"
     when "add"
-      puts "Please enter url ending:"
+      puts "Please enter URL ending (Case Sensetive):"
       @url_ending = gets.chomp
-      Scraper.new(@url_ending).create_hero_hash
-      list_options
-      select_option
+      if @url_ending == " " || @url_ending == "" || Scraper.all.include?(@url_ending)
+        begin
+          raise SelectionError
+        rescue SelectionError => error
+          error.message
+          list_options
+          select_option
+        end
+      else
+        Scraper.new(@url_ending).create_hero_hash
+        list_options
+        select_option
+      end
     else
       i = input.to_i
       c = Hero.all.count

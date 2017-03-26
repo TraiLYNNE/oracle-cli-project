@@ -1,6 +1,7 @@
 class Scraper
   #attributes and variables
   attr_accessor :url_ending, :url, :change_to_symbols, :symbols, :values, :character_info_push
+  @@all = Array.new
 
 
   #modules
@@ -8,11 +9,15 @@ class Scraper
 
   #initialize
   def initialize(url_ending)
+    @@all << url_ending
     @url = "http://dc.wikia.com/wiki/#{url_ending}"
   end
 
 
-  #class methods
+  #class
+  def self.all
+    @@all
+  end
 
 
   #instance methods
