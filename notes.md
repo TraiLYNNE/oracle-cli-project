@@ -41,14 +41,14 @@ I need a CLI, Hero, and Scraper class
   [x] convert to a symbol
 
 5. all in all
-  [] needs to work for all of my people
+  [x] needs to work for all of my people
   [x] aquaman
   [x] batman
-  [] flash
-  [] green arrow
-  [] green lantern
-  [] superman
-  [] wonder woman
+  [x] flash
+  [x] green arrow
+  [x] green lantern
+  [x] superman
+  [x] wonder woman
 
 Random Ideas
 - complete reset if password entered incorrectly too many times ?
