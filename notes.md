@@ -31,8 +31,14 @@ I need a CLI, Hero, and Scraper class
   [x] needs to be able to display it's heroes options
 
 4. Scraper
-  [] needs to accept the end of a url
-  [] works with Nokiogiri
+  [x] needs to accept the end of a url
+  [x] works with Nokiogiri
+  [] needs to accept the 'aside' css of a url
+  [] each 'H3' in the aside needs to be converted to a symbol
+  [] split the words in an aside
+  [] downcase all the letters in each word
+  [] join the words with a _ between each word
+  [] convert to a symbol
 
 Random Ideas
 - complete reset if password entered incorrectly too many times ?

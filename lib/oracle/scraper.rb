@@ -18,7 +18,8 @@ class Scraper
   #instance methods
   def scrape_site
     character_profile = Nokogiri::HTML(open(@url))
-    puts character_profile
+
+    symbols = character_profile.css('aside .pi-data').collect {|sym| sym.css('h3').text}
   end
 
 
