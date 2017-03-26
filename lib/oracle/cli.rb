@@ -3,17 +3,6 @@ class Oracle::CLI
     puts "Welcome."
     password
     list_options
-    # puts "Who would you like more information about?"
-    # puts "(Select a number, say 'List', or 'done')"
-    # input = gets.chomp
-    # case input
-    # when "list"
-    #   list_options
-    # when "done"
-    #   puts "Right then. Back to work"
-    # else
-    #   puts "details"
-    # end
     select_option
   end
 
@@ -45,5 +34,11 @@ class Oracle::CLI
       Hero.all[input.to_i - 1].display_details
       select_option
     end
+  end
+end
+
+class PasswordError < StandardError
+  def message
+    "Please enter valid password"
   end
 end
