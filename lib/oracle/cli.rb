@@ -35,8 +35,14 @@ class Oracle::CLI
     when "done"
       puts "Right then. Back to work"
     else
-      Hero.all[input.to_i - 1].display_details
-      select_option
+      i = input.to_i
+      c = Hero.all.count
+      if i.between?(1, c)
+        Hero.all[input.to_i - 1].display_details
+        select_option
+      else
+        raise SelectionError
+      end
     end
   end
 end
