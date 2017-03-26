@@ -32,7 +32,7 @@ I need a CLI, Hero, and Scraper class
 
 4. Scraper
   [] needs to accept the end of a url
-
+  [] works with Nokiogiri
 
 Random Ideas
 - complete reset if password entered incorrectly too many times ?

@@ -3,7 +3,7 @@
 require "bundler/setup"
 require "oracle"
 
-batman = {:real_name => "bruce Wayne", :current_alias => "Batman", :affiliation => "Batman Inc., Justice League, Justice League International", :boo => "Batcave, Wayne Manor Gotham City", :identity => "Secret Identity", :citizenship => "American", :marital_status => "Single", :occupation => "Businessman", :gender => "Male", :eyes => "Blue", :hair => "Black", :universe => "Prime Earth", :pob => "Crest Hill, Bristol Township"}
+#batman = {:real_name => "bruce Wayne", :current_alias => "Batman", :affiliation => "Batman Inc., Justice League, Justice League International", :boo => "Batcave, Wayne Manor Gotham City", :identity => "Secret Identity", :citizenship => "American", :marital_status => "Single", :occupation => "Businessman", :gender => "Male", :eyes => "Blue", :hair => "Black", :universe => "Prime Earth", :pob => "Crest Hill, Bristol Township"}
 
-Hero.new(batman)
-Oracle::CLI.new.call
+Scraper.new.scrape_site("Bruce_Wayne_(Prime_Earth)")
+#Oracle::CLI.new.call
