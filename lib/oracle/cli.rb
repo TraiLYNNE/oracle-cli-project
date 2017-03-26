@@ -26,7 +26,7 @@ class Oracle::CLI
 
   def select_option
     puts "Who would you like more information about?"
-    puts "(Select a number, say 'list', or 'done')"
+    puts "(Select a number, say 'add' 'list', or 'done')"
     input = gets.chomp
     case input
     when "list"
@@ -34,6 +34,12 @@ class Oracle::CLI
       select_option
     when "done"
       puts "Right then. Back to work"
+    when "add"
+      puts "Please enter url ending:"
+      @url_ending = gets.chomp
+      Scraper.new(@url_ending).create_hero_hash
+      list_options
+      select_option
     else
       i = input.to_i
       c = Hero.all.count
