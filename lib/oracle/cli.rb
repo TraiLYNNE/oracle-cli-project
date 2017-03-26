@@ -10,8 +10,12 @@ class Oracle::CLI
     puts "Please enter your secret identity:"
     pw_input = STDIN.noecho(&:gets).chomp
     if pw_input != "Bruce Wayne"
-      raise PasswordError
-      password
+      begin
+        raise PasswordError
+      rescue PasswordError => error
+        puts error.message
+        password
+      end
     end
   end
 
