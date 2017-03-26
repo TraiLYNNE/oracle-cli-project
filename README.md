@@ -1,8 +1,8 @@
 # Oracle
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/oracle`. To experiment with that code, run `bin/console` for an interactive prompt.
+An application based on BatGirl when she becomes Oracle.
+The application will accept a  of "Bruce Wayne", list heroes in the database, and when a hero is chosen, their details will be displayed. The user, acting as Batman, will have the ability to add to the list based on a url ending from dc.wikia.com/wiki/_____ (i.e. dc.wikia.com/wiki/Bruce_Wayne_(Prime_Earth)). The added hero will appear in the list of options availiable to the user.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -38,4 +38,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/'tlcom
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

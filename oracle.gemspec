@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Trai Compton'"]
   spec.email         = ["'tlcompton2546@outlook.com'"]
 
-  spec.summary       = %q{A database based on BatGirl when she becomes Oracle}
-  spec.description   = %q{The database will accept a password, list heroes in the database, and when a hero is chosen, their details will be displayed.}
+  spec.summary       = %q{An application based on BatGirl when she becomes Oracle}
+  spec.description   = %q{The application will accept a password, list heroes in the database, and when a hero is chosen, their details will be displayed.}
   spec.homepage      = "https://www.github.com/TraiLYNNE/oracle-cli-project"
   spec.license       = "MIT"
 

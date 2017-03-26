@@ -4,9 +4,6 @@ class Scraper
   @@all = Array.new
 
 
-  #modules
-
-
   #initialize
   def initialize(url_ending)
     @@all << url_ending
@@ -14,7 +11,7 @@ class Scraper
   end
 
 
-  #class
+  #class methods
   def self.all
     @@all
   end
