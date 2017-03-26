@@ -41,7 +41,12 @@ class Oracle::CLI
         Hero.all[input.to_i - 1].display_details
         select_option
       else
-        raise SelectionError
+        begin
+          raise SelectionError
+        rescue SelectionError => error
+          error.message
+          select_option
+        end
       end
     end
   end
