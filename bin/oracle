@@ -9,4 +9,4 @@ require "oracle"
 #Oracle::CLI.new.call
 
 
-Scraper.new("Bruce_Wayne_(Prime_Earth)").scrape_site
+Scraper.new("Bruce_Wayne_(Prime_Earth)").create_hero_hash
