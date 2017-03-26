@@ -1,6 +1,22 @@
 class Scraper
-  def scrape_site(url_end)
-    hero_page = Nokogiri::HTML(open("http://dc.wikia.com/wiki/#{url_end}"))
-    hero_page
+  #attributes and variables
+  attr_accessor :url_ending, :url
+
+
+  #modules
+
+
+  #initialize
+  def initialize(url_ending)
+    @url = "http://dc.wikia.com/wiki/#{url_ending}"
   end
+
+
+  #class methods
+
+
+  #instance methods
+
+
+
 end
