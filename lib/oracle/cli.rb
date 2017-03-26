@@ -46,3 +46,10 @@ class PasswordError < StandardError
     "Please enter valid password"
   end
 end
+
+class SelectionError < StandardError
+
+  def message
+    "Please choose valid option"
+  end
+end
