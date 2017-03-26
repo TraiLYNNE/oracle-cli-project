@@ -33,12 +33,22 @@ I need a CLI, Hero, and Scraper class
 4. Scraper
   [x] needs to accept the end of a url
   [x] works with Nokiogiri
-  [] needs to accept the 'aside' css of a url
-  [] each 'H3' in the aside needs to be converted to a symbol
-  [] split the words in an aside
-  [] downcase all the letters in each word
-  [] join the words with a _ between each word
-  [] convert to a symbol
+  [x] needs to accept the 'aside' css of a url
+  [x] each 'H3' in the aside needs to be converted to a symbol
+  [x] split the words in an aside
+  [x] downcase all the letters in each word
+  [x] join the words with a _ between each word
+  [x] convert to a symbol
+
+5. all in all
+  [] needs to work for all of my people
+  [] aquaman
+  [x] batman
+  [] flash
+  [] green arrow
+  [] green lantern
+  [] superman
+  [] wonder woman
 
 Random Ideas
 - complete reset if password entered incorrectly too many times ?
