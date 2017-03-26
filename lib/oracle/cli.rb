@@ -21,7 +21,7 @@ class Oracle::CLI
 
   def list_options
     puts "Here are your allies:"
-    Hero.all.each.with_index {|a,i| puts "#{i+1}. #{a.current_alias}"}
+    Hero.all.sort_by!{|hero| hero.current_alias}.each.with_index {|a,i| puts "#{i+1}. #{a.current_alias}"}
   end
 
   def select_option
