@@ -42,7 +42,7 @@ I need a CLI, Hero, and Scraper class
 
 5. all in all
   [] needs to work for all of my people
-  [] aquaman
+  [x] aquaman
   [x] batman
   [] flash
   [] green arrow
