@@ -21,14 +21,15 @@ class Scraper
     scrape_site
     create_keys
     create_hash
+    Hero.new(character_info_push)
   end
 
   def scrape_site
-    character_profile = Nokogiri::HTML(open(@url))
+    character_page = Nokogiri::HTML(open(@url))
 
-    @change_to_symbols = character_profile.css('aside .pi-data').collect {|sym| sym.css('h3').text}
+    @change_to_symbols = character_page.css('aside .pi-data').collect {|sym| sym.css('h3').text}
 
-    @values = character_profile.css('aside .pi-data').collect {|val| val.css('.pi-data-value').text}
+    @values = character_page.css('aside .pi-data').collect {|val| val.css('.pi-data-value').text}
 
   end
 

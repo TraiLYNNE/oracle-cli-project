@@ -1,6 +1,6 @@
 class Hero
   #attributes and variables
-  attr_accessor :real_name, :current_alias, :affiliation, :boo, :identity, :citizenship, :marital_status, :occupation, :gender, :eyes, :hair, :universe, :pob
+  attr_accessor :real_name, :current_alias, :aliases, :relatives, :affiliation, :base_of_operations, :alignment, :identity, :citizenship, :marital_status, :occupation, :gender, :eyes, :hair, :universe, :place_of_birth, :creators
   @@all = Array.new
 
   #modules
@@ -26,7 +26,7 @@ class Hero
     puts "Real Name: #{real_name}"
     puts "Alias: #{current_alias}"
     puts "Affliation: #{affiliation}"
-    puts "Base of Operation: #{boo}"
+    puts "Base of Operation: #{base_of_operations}"
     puts "--------------"
     puts "Status:"
     puts "Identity: #{identity}"
@@ -41,6 +41,6 @@ class Hero
     puts "--------------"
     puts "Origin:"
     puts "Universe: #{universe}"
-    puts "Place of Birth: #{pob}"
+    puts "Place of Birth: #{place_of_birth}"
   end
 end
