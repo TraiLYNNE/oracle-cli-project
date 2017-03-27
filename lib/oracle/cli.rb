@@ -41,7 +41,7 @@ class Oracle::CLI
         begin
           raise SelectionError
         rescue SelectionError => error
-          error.message
+          puts error.message
           list_options
           select_option
         end
@@ -60,7 +60,7 @@ class Oracle::CLI
         begin
           raise SelectionError
         rescue SelectionError => error
-          error.message
+          puts error.message
           select_option
         end
       end
