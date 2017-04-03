@@ -2,6 +2,14 @@ class Scraper
   #attributes and variables
   attr_accessor :url_ending, :url, :change_to_symbols, :symbols, :values, :character_info_push
   @@all = Array.new
+  DEFAULT_URLS = ["Bruce_Wayne_(Prime_Earth)",
+     "Arthur_Curry_(Prime_Earth)",
+     "Bartholomew_Allen_(Prime_Earth)",
+     "Oliver_Queen_(Prime_Earth)",
+     "John_Stewart_(Prime_Earth)",
+     "Kal-El_(Prime_Earth)",
+     "Diana_of_Themyscira_(Prime_Earth)"
+   ]
 
 
   #initialize
