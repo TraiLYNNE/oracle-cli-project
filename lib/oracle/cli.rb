@@ -1,7 +1,17 @@
 class Oracle::CLI
+  DEFAULT_URLS = ["Bruce_Wayne_(Prime_Earth)",
+     "Arthur_Curry_(Prime_Earth)",
+     "Bartholomew_Allen_(Prime_Earth)",
+     "Oliver_Queen_(Prime_Earth)",
+     "John_Stewart_(Prime_Earth)",
+     "Kal-El_(Prime_Earth)",
+     "Diana_of_Themyscira_(Prime_Earth)"
+   ]
+
   def call
     puts "Welcome."
     password
+    create_defaults
     list_options
     select_option
   end
@@ -19,9 +29,13 @@ class Oracle::CLI
     end
   end
 
+  def create_defaults
+    DEFAULT_URLS.each{|url| Oracle::Hero.new(url)}
+  end
+
   def list_options
     puts "Here are your allies:"
-    Hero.all.sort_by!{|hero| hero.current_alias}.each.with_index {|a,i| puts "#{i+1}. #{a.current_alias}"}
+    Oracle::Hero.all.sort_by!{|hero| hero.current_alias}.each.with_index {|a,i| puts "#{i+1}. #{a.current_alias}"}
   end
 
   def select_option
@@ -37,7 +51,7 @@ class Oracle::CLI
     when "add"
       puts "Please enter URL ending (Case Sensetive):"
       @url_ending = gets.chomp
-      if @url_ending == " " || @url_ending == "" || Scraper.all.include?(@url_ending)
+      if @url_ending == " " || @url_ending == "" || Oracle::Scraper.all.include?(@url_ending)
         begin
           raise SelectionError
         rescue SelectionError => error
@@ -52,9 +66,9 @@ class Oracle::CLI
       end
     else
       i = input.to_i
-      c = Hero.all.count
+      c = Oracle::Hero.all.count
       if i.between?(1, c)
-        Hero.all[input.to_i - 1].display_details
+        Oracle::Hero.all[input.to_i - 1].display_details
         select_option
       else
         begin
