@@ -6,14 +6,14 @@ class Oracle::Scraper
 
   #instance methods
 
-  def create_hero_hash(url)
+  def self.create_hero_hash(url)
     @url = url
-    scrape_site
-    create_keys
-    create_hash
+    self.scrape_site
+    self.create_keys
+    self.create_hash
   end
 
-  def scrape_site(url)
+  def self.scrape_site
     character_page = Nokogiri::HTML(open("http://dc.wikia.com/wiki/#{@url}"))
 
     @change_to_symbols = character_page.css('aside .pi-data').collect {|sym| sym.css('h3').text}
@@ -22,13 +22,13 @@ class Oracle::Scraper
 
   end
 
-  def create_keys
+  def self.create_keys
     @symbols = @change_to_symbols.collect do |sym|
       sym.split(" ").each{|word| word.downcase!}.join("_").to_sym
     end
   end
 
-  def create_hash
+  def self.create_hash
     @character_info_push = Hash.new
     @symbols.each do |symbol|
       @character_info_push[symbol] = @values[@symbols.index(symbol)]
