@@ -1,6 +1,6 @@
 class Oracle::Hero
   #attributes and variables
-  attr_accessor :url, :real_name, :current_alias, :aliases, :relatives, :affiliation, :base_of_operations, :alignment, :identity, :race, :citizenship, :marital_status, :occupation, :gender, :height, :weight, :eyes, :hair, :universe, :place_of_birth, :creators
+  attr_accessor :url, :real_name, :current_alias, :aliases, :relatives, :affiliation, :base_of_operations, :alignment, :id, :entity, :race, :citizenship, :marital_status, :occupation, :gender, :height, :weight, :eyes, :hair, :universe, :place_of_birth, :creators
   @@all = Array.new
 
   #modules
@@ -9,7 +9,7 @@ class Oracle::Hero
   #initialize
   def initialize (url)
     @url = url
-    hero_details = Oracle::Scraper.create_hero_hash(url)
+    hero_details = Oracle::Scraper.create_hero_hash(@url)
     hero_details.each{|k,v| self.send(("#{k}="), v)}
     self.class.all << self
   end
