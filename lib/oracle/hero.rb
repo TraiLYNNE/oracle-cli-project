@@ -9,7 +9,7 @@ class Oracle::Hero
   #initialize
   def initialize (url)
     @url = url
-    hero_details = Scraper.create_hero_hash(url)
+    hero_details = Oracle::Scraper.create_hero_hash(url)
     hero_details.each{|k,v| self.send(("#{k}="), v)}
     self.class.all << self
   end
