@@ -1,6 +1,6 @@
 class Oracle::Hero
   #attributes and variables
-  attr_accessor :url, :real_name, :current_alias, :aliases, :relatives, :affiliation, :base_of_operations, :alignment, :id, :entity, :race, :citizenship, :marital_status, :occupation, :gender, :height, :weight, :eyes, :hair, :universe, :place_of_birth, :creators
+  attr_accessor :url, :real_name, :current_alias, :aliases, :relatives, :affiliation, :base_of_operations, :alignment, :id, :identity, :race, :citizenship, :marital_status, :occupation, :gender, :height, :weight, :eyes, :hair, :universe, :place_of_birth, :creators
   @@all = Array.new
 
   #modules

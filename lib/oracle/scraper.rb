@@ -1,6 +1,6 @@
 class Oracle::Scraper
   #attributes and variables
-  attr_accessor :url_ending, :url, :change_to_symbols, :symbols, :values, :character_info_push
+  attr_accessor :url, :change_to_symbols, :symbols, :values
 
 
 
@@ -28,8 +28,7 @@ class Oracle::Scraper
     end
   end
 
-  def self.create_hash
-    @character_info_push = Hash.new
+  def self.create_hash(symbols, values)
     @symbols.each do |symbol|
       @character_info_push[symbol] = @values[@symbols.index(symbol)]
     end

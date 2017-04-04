@@ -12,8 +12,8 @@ class Oracle::CLI
   def call
     puts "Welcome."
     password
-    # create_defaults
-    # list_options
+    create_defaults
+    list_options
     # select_option
   end
 
@@ -30,14 +30,14 @@ class Oracle::CLI
     end
   end
 
-#   def create_defaults
-#     DEFAULT_URLS.each{|url| Oracle::Hero.new(url)}
-#   end
-#
-#   def list_options
-#     puts "Here are your allies:"
-#     Oracle::Hero.all.sort_by!{|hero| hero.current_alias}.each.with_index(1) {|a,i| puts "#{i}. #{a.current_alias}"}
-#   end
+  def create_defaults
+    DEFAULT_URLS.each{|url| Oracle::Hero.new(url)}
+  end
+
+  def list_options
+    puts "Here are your allies:"
+    Oracle::Hero.all.sort_by!{|hero| hero.current_alias}.each.with_index(1) {|a,i| puts "#{i}. #{a.current_alias}"}
+  end
 #
 #   def select_option
 #     puts "Who would you like more information about?"
