@@ -1,38 +1,20 @@
 class Oracle::Scraper
-  #attributes and variables
-  attr_accessor :url, :change_to_symbols, :symbols, :values
 
+  def self.scrape_site(url)
+    #scrape site
+    info_hash = Hash.new
+    character_page = Nokogiri::HTML(open("http://dc.wikia.com/wiki/#{url}"))
 
+    #collect information in arrays
+    properties = character_page.css('aside .pi-data').collect {|sym| sym.css('h3').text}
 
-  #instance methods
+    values = character_page.css('aside .pi-data').collect {|val| val.css('.pi-data-value').text}
 
-  def self.create_hero_hash(url)
-    @url = url
-    self.scrape_site
-    self.create_keys
-    self.create_hash
-  end
+    #turn the arrays into a hash
+    properties.each{|property| info_hash[property.split(" ").each{|word| word.downcase!}.join("_").to_sym] = values[properties.index(property)]}
 
-  def self.scrape_site
-    character_page = Nokogiri::HTML(open("http://dc.wikia.com/wiki/#{@url}"))
-
-    @change_to_symbols = character_page.css('aside .pi-data').collect {|sym| sym.css('h3').text}
-
-    @values = character_page.css('aside .pi-data').collect {|val| val.css('.pi-data-value').text}
+    info_hash
 
   end
-
-  def self.create_keys
-    @symbols = @change_to_symbols.collect do |sym|
-      sym.split(" ").each{|word| word.downcase!}.join("_").to_sym
-    end
-  end
-
-  def self.create_hash(symbols, values)
-    @symbols.each do |symbol|
-      @character_info_push[symbol] = @values[@symbols.index(symbol)]
-    end
-  end
-
 
 end
