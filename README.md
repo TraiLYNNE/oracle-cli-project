@@ -1,7 +1,7 @@
 # Oracle
 
 An application based on BatGirl when she becomes Oracle.
-The application will accept a  of "Bruce Wayne", list heroes in the database, and when a hero is chosen, their details will be displayed. The user, acting as Batman, will have the ability to add to the list based on a url ending from dc.wikia.com/wiki/_____ (i.e. dc.wikia.com/wiki/Bruce_Wayne_(Prime_Earth)). The added hero will appear in the list of options availiable to the user.
+The application will accept a password of "Bruce Wayne", list heroes in the database, and when a hero is chosen, their details will be displayed. The user, acting as Batman, will have the ability to add to the list based on a url ending from dc.wikia.com/wiki/_____ (i.e. dc.wikia.com/wiki/Bruce_Wayne_(Prime_Earth)). The added hero will appear in the list of options availiable to the user.
 
 
 ## Installation
@@ -20,9 +20,6 @@ Or install it yourself as:
 
     $ gem install oracle
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -32,7 +29,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/'tlcompton2546-43659'/oracle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/TraiLYNNE/oracle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

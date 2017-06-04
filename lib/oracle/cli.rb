@@ -87,7 +87,7 @@ class Oracle::CLI
     puts "Basic Information"
     puts "Real Name: #{Oracle::Hero.all[i].real_name}"
     puts "Alias: #{Oracle::Hero.all[i].current_alias}"
-    puts "Affliation: #{Oracle::Hero.all[i].affiliation}"
+    puts "Affiliation: #{Oracle::Hero.all[i].affiliation}"
     puts "Base of Operation: #{Oracle::Hero.all[i].base_of_operations}"
     puts "--------------"
     puts "Status:"
@@ -105,7 +105,7 @@ class Oracle::CLI
     puts "Universe: #{Oracle::Hero.all[i].universe}"
     puts "Place of Birth: #{Oracle::Hero.all[i].place_of_birth}"
   end
- end
+end
 
 class PasswordError < StandardError
   def message
